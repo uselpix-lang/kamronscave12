@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Jays vs Yankees Gazette</title>
+<style>
+  body {
+    margin: 0;
+    background: #020b14;
+    color: #aef8ff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+
+  header {
+    text-align: center;
+    padding: 160px 20px 100px;
+    color: #00eaff;
+    text-shadow: 0 0 25px #00eaff;
+  }
+
+  header h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+  }
+
+  header p {
+    font-size: 1.3rem;
+    color: #7ff9ff;
+    text-shadow: 0 0 12px #00eaff;
+  }
+
+  section {
+    max-width: 900px;
+    margin: 400px auto; /* huge spacing between sections */
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.4s ease-out;
+  }
+
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  h2 {
+    color: #00eaff;
+    text-shadow: 0 0 25px #00eaff;
+    font-size: 2.6rem;
+    margin-bottom: 100px; /* larger gap under titles */
+  }
+
+  p {
+    line-height: 2.2;
+    font-size: 1.5rem;
+    margin-bottom: 180px; /* huge gap under text */
+  }
+
+  img.section-image {
+    width: 85%;
+    max-width: 950px;
+    border-radius: 25px;
+    margin: 150px auto 250px; /* even more breathing room for images */
+    display: block;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  img.section-image:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 50px rgba(0, 255, 255, 0.7);
+  }
+
+  .button-container {
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 200px;
+  }
+
+  button {
+    background: none;
+    border: 2px solid #00eaff;
+    color: #00eaff;
+    padding: 16px 60px;
+    font-size: 1.4rem;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+
+  button:hover {
+    background: #00eaff;
+    color: #001a25;
+    box-shadow: 0 0 40px #00eaff;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Blue Jays vs Yankees — ALDS Game 2</h1>
+  <p>Made by Kamron</p>
+</header>
+
+<section>
+  <h2>The Game Ignites</h2>
+  <p>The Toronto Blue Jays were playing against the New York Yankees in Game 2 of the ALDS league, both teams entered with strong determination to win, but Toronto quickly set the fire for an unforgettable game!!!!.</p>
+  <img src="https://lwosports.com/wp-content/uploads/2025/10/USATSI_27255460-1024x722.jpg" alt="Battle Begins" class="section-image">
+</section>
+
+<section>
+  <h2>Crazy Pitching</h2>
+  <p>Pitcher Trey Yesavage delivered a jaw dropping performance striking out 11 players and allowing no hits in over five tries.</p>
+  <img src="https://toronto.citynews.ca/wp-content/blogs.dir/sites/10/2025/09/15/CP175011256-1024x683.jpg" alt="Dominant Pitching" class="section-image">
+</section>
+
+<section>
+  <h2>Offensive Moment</h2>
+  <p>The Jays bats caught fire the fire when Vladimir Guerrero Jr. launched a grand shot that sent the Rogers Centre into crazy chaos, the Yankees tried to fight back but Torontos offense was unstoppable.</p>
+  <img src="https://www.aljazeera.com/wp-content/uploads/2025/04/2024-08-20T210033Z_503308929_MT1USATODAY24037713_RTRMADP_3_MLB-OAKLAND-ATHLETICS-AT-TORONTO-BLUE-JAYS-1744002362.jpg?resize=770%2C513&quality=80" alt="Offensive Explosion" class="section-image">
+</section>
+
+<section>
+  <h2>Important Moments</h2>
+  <p>One of the most thrilling moments came when Bo Bichette made a crazy stop and preventing a key run, on the Yankees side Aaron Judge cracked a 450-foot homer proving hes still a monster.</p>
+</section>
+
+<section>
+  <h2>Final Recap</h2>
+  <p>Toronto got a crazy 13–7 victory taking a 2–0 lead in the series and the Jays moved closer to the ALCS.</p>
+  <img src="https://i.cbc.ca/1.7651809.1759705837!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_1180/yesavage-trey-241005-1180.jpg?im=" alt="Final Recap" class="section-image">
+</section>
+
+<div class="button-container">
+  <button onclick="window.location.href='skibidi.html'">Click Me</button>
+</div>
+
+<script>
+  const sections = document.querySelectorAll("section");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.4 });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+</body>
+</html>
